@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0px;
+        }
+        header {
+           display:flex;
+           flex-direction: column;
+        }
+        .sub_nav {
+            display: flex;
+            background-color: #033075;
+            height: 33px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        .sub_nav_inner {
+            width: 100%;
+            max-width: 1280px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .right_nav {
+            float: right;
+        }
+        .right_nav > li {
+            position: relative;
+            float: left;
+            color: white;
+            padding: 0px 15px;
+        }
+        .right_nav > li ::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            margin-top: -6px;
+            right: 0px;
+            width: 1px;
+            height: 12px;
+            background-color: #6d88b4;
+        }
+
+        .left_nav {
+            float: left;
+        }
+        .left_nav > li {
+            position: relative;
+            float: left;
+            color: white;
+            padding: 0px 15px;
+        }
+        .sub_nav a:hover {
+            text-decoration: underline;
+        }
+        .left_nav > li ::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            margin-top: -6px;
+            right: 0px;
+            width: 1px;
+            height: 12px;
+            background-color: #6d88b4;
+        }
+        .left_nav > li:first-child{
+            position: relative;
+            float: left;
+            color: white;
+            padding-left: 0px;
+        }
+        .arrow {
+            
+            padding-left: 6px;
+            cursor: pointer;
+        }
+        .sub_nav li:last-child ::after {
+            content: none;
+        }
+        .logo {
+            cursor: pointer;
+        }
+        .main_nav {
+            display: flex;
+            background-color: white;
+            height: 75px;
+            width: 100%;
+            box-shadow: 1px 3px 10px rgba(3,48,117,30%);
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+        .main_nav_inner {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            max-width: 1280px;
+            font-weight: bold;
+            font-size: 14px;
+            box-sizing: border-box;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav {
+            float: right;
+            height: 100%;
+            line-height: 75px;
+            font-family: "Open Sans";
+            font-size: 21px;
+            font-weight: bold;
+            color:#333;
+        }
+        .nav > li{
+            float: left;
+            padding: 0px 26px;
+        }
+        .nav > li > a:hover{
+            color:#006ae2;
+        }
+        .nav > li > a {
+            padding: 15px 8px;
+        }
+        .banner{
+            
+        }
+        .banner_inner {
+            
+        }
+        .banner_inner > img{
+            width: 100%;
+            height: 250px;
+            object-fit: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="sub_nav">
+            <div class="sub_nav_inner">
+                <ul class="left_nav">
+                    <li><div><a href="#">For Foreigners</a><img class="arrow" src="img/arrow.png"></div></li><li><a href="#">어린이</a></li>
+                </ul>
+                <ul class="right_nav">
+                    <li><a href="#">로그인</a></li><li><a href="#">회원가입</a></li><li><a href="#">정부24소개</a></li><li><a href="#">누리집 안내지도</a></li><li><a href="#">화면크기</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main_nav">
+            <div class="main_nav_inner">
+                <a href="#"><img class="logo" src="img/logo.png"></a>
+                <ul class="nav">
+                    <li><a href="#">서비스</a></li>
+                    <li><a href="#">보조금</a></li>
+                    <li><a href="#">정책정보</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <banner>
+        <div class="banner">
+            <div class="banner_inner">
+                <img src="img/img1.jpg">
+            </div>
+        </div>
+    </banner>
+</body>
+</html>
