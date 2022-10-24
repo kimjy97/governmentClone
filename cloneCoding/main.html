@@ -98,6 +98,34 @@
         .sub_nav li:last-child ::after {
             content: none;
         }
+        .sizeControl_container {
+            float: right;
+            width: 90px;
+            height: 18px;
+            display: flex;
+            background-color: rgba(202,231,247,.4);
+            font-size: 13px;
+            margin-left: 10px;
+        }
+        .size_text {
+            width: 54px;
+            text-align: center;
+            line-height: 18px;
+        }
+        .minusbutton {
+            width: 18px;
+            height: 18px;
+            background: url(img/zoom-btn.png);
+            background-position: 0px -18px;
+            cursor: pointer;
+        }
+        .plusbutton {
+            width: 18px;
+            height: 18px;
+            background: url(img/zoom-btn.png);
+            background-position: 0px 0px;
+            cursor: pointer;
+        }
         .logo {
             cursor: pointer;
         }
@@ -142,16 +170,11 @@
         .nav > li > a {
             padding: 15px 8px;
         }
-        .banner{
-            
-        }
-        .banner_inner {
-            
-        }
         .banner_inner > img{
             width: 100%;
             height: 250px;
             object-fit: none;
+            cursor: pointer;
         }
         .main_nav_container {
             display: flex;
@@ -171,6 +194,10 @@
             align-items: center;
             font-size: 15px;
             font-weight: bold;
+            cursor: pointer;
+        }
+        .nav_bt1:hover {
+            text-decoration: underline;
         }
         .nav_bt1 img:first-child {
             padding-right: 8px;
@@ -183,6 +210,172 @@
             background-position: -109px -65px;
             background-repeat: no-repeat;
         }
+        .login_section {
+            position: relative;
+            width: 1280px;
+            margin: 0 auto;
+        }
+        .login_container {
+            position: absolute;
+            width: 324px;
+            background-color: white;
+            box-shadow: 0 3px 10px -4px #000;
+            color: #333;
+            right: 0;
+            bottom: 55px;
+        }
+        .login_container > p{
+            font-size: 18px;
+            line-height: 28px;
+            text-align: left;
+            padding: 0 19px;
+            margin: 16px 0 10px;
+            box-sizing: border-box;
+        }
+        .login_button {
+            height: 42px;
+            padding: 8px 30px 8px 30px;
+            border-radius: 25px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #1089d2;
+            box-sizing: border-box;
+            text-align: center;
+            margin: 0 20px;
+            cursor: pointer;
+        }
+        .login_button:hover {
+            text-decoration: underline;
+        }
+        .login_container ul{
+            position: relative;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 17px;
+            margin-bottom: 17px;
+            padding: 0 19px;
+            font-size: 14px;
+        }
+        .login_container li{
+            position: relative;
+            display: flex;
+            float: left;
+            align-items: center;
+        }
+        .login_container li:hover {
+            text-decoration: underline;
+        }
+        .login_container li:first-child::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            margin-top: -6px;
+            left: 98px;
+            width: 1px;
+            height: 12px;
+            background-color: #e0e0e0;
+        }
+        .login_icon {
+            width: 14px;
+            height: 14px;
+            padding-right: 5px;
+        }
+        .bannerControl_container {
+            position: absolute;
+            display: flex;
+            top: -75px;
+            left: 34%;
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            width: 130px;
+            height: 30px;
+            border-radius: 15px;
+            font-size: 16px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 15px;
+            box-sizing: border-box;
+            z-index: 1001;
+        }
+        .bannerpage {
+            letter-spacing: 2px;
+        }
+        .left_bannerbutton {
+            width: 7px;
+            height: 12px;
+            padding: 4px 6.5px;
+            background: url("img/banner_slide.png");
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            cursor: pointer;
+        }
+        .right_bannerbutton {
+            width: 7px;
+            height: 12px;
+            padding: 4px 6.5px;
+            background: url("img/banner_slide2.png");
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            cursor: pointer;
+        }
+        .pause_bannerbutton {
+            width: 8px;
+            height: 10px;
+            padding: 5px 6px;
+            background: url("img/banner_pause.png");
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            cursor: pointer;
+        }
+        .search_section {
+            position: relative;
+            padding-left: 53px;
+            display: flex;
+            width: 1280px;
+            height: 108px;
+            color: #333333;
+            background-color: #f7faff;
+            margin: 0 auto;
+            margin-top: -30px;
+            box-shadow: 0 -10px 30px -20px #000;
+            border: 1px solid #d5dbe5;
+            justify-self: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        .search_container {
+            position: relative;
+            width: 62%;
+            box-sizing: border-box;
+        }
+        .searchbar {
+            width: 100%;
+            height: 60px;
+            float: left;
+            padding: 0 66px 0 30px;
+            border: 3px solid #3352a4;
+            border-radius: 30px;
+            color: #555555;
+            font-size: 20px;
+            vertical-align: middle;
+            box-sizing: border-box;
+            outline: none;
+        }
+        .searchButton {
+            position: absolute;
+            overflow: hidden;
+            top: 50%;
+            right: 15px;
+            width: 44px;
+            height: 44px;
+            border: 0;
+            border-radius: 100%;
+            background: #3352a4 url("img/search_icon.png") 50% 50% no-repeat;
+            transform: translateY(-50%);
+        }
     </style>
 </head>
 <body>
@@ -193,7 +386,7 @@
                     <li><div><a href="#">For Foreigners</a><img class="arrow" src="img/arrow.png"></div></li><li><a href="#">어린이</a></li>
                 </ul>
                 <ul class="right_nav">
-                    <li><a href="#">로그인</a></li><li><a href="#">회원가입</a></li><li><a href="#">정부24소개</a></li><li><a href="#">누리집 안내지도</a></li><li><a href="#">화면크기</a></li>
+                    <li><a href="#">로그인</a></li><li><a href="#">회원가입</a></li><li><a href="#">정부24소개</a></li><li><a href="#">누리집 안내지도</a></li><li>화면크기<div class="sizeControl_container"><div class="minusbutton"></div><div class="size_text"><a href="#">100%</a></div><div class="plusbutton"></div></div></li>
                 </ul>
             </div>
         </div>
@@ -219,5 +412,29 @@
             </div>
         </div>
     </banner>
+    <!--로그인 섹션-->
+    <section class="login_section">
+        <div class="login_container">
+            <p>나에게 꼭 필요한<br> <b>생활/혜택정보</b>를 확인 하세요.</p>
+            <div class="login_button"><a href="#">로그인</a></div>
+            <ul>
+                <li><img class="login_icon" src="img/icon2.png"><a href="#">아이디 찾기</a></li>
+                <li><a href="#">비밀번호 찾기</a></li>
+                <li><img class="login_icon" src="img/icon3.png"><a href="#">회원가입</a></li>
+            </ul>
+        </div>
+        <div class="bannerControl_container">
+            <div class="bannerpage">1/4</div>
+            <div class="left_bannerbutton"></div>
+            <div class="pause_bannerbutton"></div>
+            <div class="right_bannerbutton"></div>
+        </div>
+    </section>
+    <!--검색 섹션-->
+    <section>
+        <div class="search_section">
+            <div class="search_container"><input type="text" value="검색어를 입력해주세요." class="searchbar"><div class="searchButton"></div></div>
+        </div>
+    </section>
 </body>
 </html>
