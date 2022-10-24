@@ -153,6 +153,36 @@
             height: 250px;
             object-fit: none;
         }
+        .main_nav_container {
+            display: flex;
+            width:100%;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 80px;
+        }
+        .nav_bt1 {
+            display: flex;
+            border-radius: 20px;
+            background-color: #eb193a;
+            width: 200px;
+            height: 40px;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .nav_bt1 img:first-child {
+            padding-right: 8px;
+        }
+        .nav_bt1 div:last-child {
+            width: 8px;
+            height: 11px;
+            margin-left: 20px;
+            background: url("img/icon_myset.png");
+            background-position: -109px -65px;
+            background-repeat: no-repeat;
+        }
     </style>
 </head>
 <body>
@@ -170,12 +200,15 @@
         <div class="main_nav">
             <div class="main_nav_inner">
                 <a href="#"><img class="logo" src="img/logo.png"></a>
-                <ul class="nav">
-                    <li><a href="#">서비스</a></li>
-                    <li><a href="#">보조금</a></li>
-                    <li><a href="#">정책정보</a></li>
-                    <li><a href="#">고객센터</a></li>
-                </ul>
+                <div class="main_nav_container">
+                    <ul class="nav">
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">보조금24</a></li>
+                        <li><a href="#">정책정보</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                    <div class="nav_bt1"><img src="img/icon1.png">처음오셨나요?<div></div></div>
+                </div>
             </div>
         </div>
     </header>
