@@ -7,378 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
-    <title>Document</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            font-family: 'Nanum Gothic', sans-serif;
-        }
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-        ul {
-            list-style: none;
-            padding-left: 0px;
-        }
-        header {
-           display:flex;
-           flex-direction: column;
-        }
-        .sub_nav {
-            display: flex;
-            background-color: #033075;
-            height: 33px;
-            width: 100%;
-            align-items: center;
-            justify-content: center;
-        }
-        .sub_nav_inner {
-            width: 100%;
-            max-width: 1280px;
-            font-weight: bold;
-            font-size: 14px;
-        }
-        .right_nav {
-            float: right;
-        }
-        .right_nav > li {
-            position: relative;
-            float: left;
-            color: white;
-            padding: 0px 15px;
-        }
-        .right_nav > li ::after {
-            content: '';
-            display: block;
-            position: absolute;
-            top: 50%;
-            margin-top: -6px;
-            right: 0px;
-            width: 1px;
-            height: 12px;
-            background-color: #6d88b4;
-        }
-
-        .left_nav {
-            float: left;
-        }
-        .left_nav > li {
-            position: relative;
-            float: left;
-            color: white;
-            padding: 0px 15px;
-        }
-        .sub_nav a:hover {
-            text-decoration: underline;
-        }
-        .left_nav > li ::after {
-            content: '';
-            display: block;
-            position: absolute;
-            top: 50%;
-            margin-top: -6px;
-            right: 0px;
-            width: 1px;
-            height: 12px;
-            background-color: #6d88b4;
-        }
-        .left_nav > li:first-child{
-            position: relative;
-            float: left;
-            color: white;
-            padding-left: 0px;
-        }
-        .arrow {
-            
-            padding-left: 6px;
-            cursor: pointer;
-        }
-        .sub_nav li:last-child ::after {
-            content: none;
-        }
-        .sizeControl_container {
-            float: right;
-            width: 90px;
-            height: 18px;
-            display: flex;
-            background-color: rgba(202,231,247,.4);
-            font-size: 13px;
-            margin-left: 10px;
-        }
-        .size_text {
-            width: 54px;
-            text-align: center;
-            line-height: 18px;
-        }
-        .minusbutton {
-            width: 18px;
-            height: 18px;
-            background: url(img/zoom-btn.png);
-            background-position: 0px -18px;
-            cursor: pointer;
-        }
-        .plusbutton {
-            width: 18px;
-            height: 18px;
-            background: url(img/zoom-btn.png);
-            background-position: 0px 0px;
-            cursor: pointer;
-        }
-        .logo {
-            cursor: pointer;
-        }
-        .main_nav {
-            display: flex;
-            background-color: white;
-            height: 75px;
-            width: 100%;
-            box-shadow: 1px 3px 10px rgba(3,48,117,30%);
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-        }
-        .main_nav_inner {
-            display: flex;
-            width: 100%;
-            height: 100%;
-            margin: 0 auto;
-            max-width: 1280px;
-            font-weight: bold;
-            font-size: 14px;
-            box-sizing: border-box;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .nav {
-            float: right;
-            height: 100%;
-            line-height: 75px;
-            font-family: "Open Sans";
-            font-size: 21px;
-            font-weight: bold;
-            color:#333;
-        }
-        .nav > li{
-            float: left;
-            padding: 0px 26px;
-        }
-        .nav > li > a:hover{
-            color:#006ae2;
-        }
-        .nav > li > a {
-            padding: 15px 8px;
-        }
-        .banner_inner > img{
-            width: 100%;
-            height: 250px;
-            object-fit: none;
-            cursor: pointer;
-        }
-        .main_nav_container {
-            display: flex;
-            width:100%;
-            justify-content: space-between;
-            align-items: center;
-            padding-left: 80px;
-        }
-        .nav_bt1 {
-            display: flex;
-            border-radius: 20px;
-            background-color: #eb193a;
-            width: 200px;
-            height: 40px;
-            color: white;
-            justify-content: center;
-            align-items: center;
-            font-size: 15px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .nav_bt1:hover {
-            text-decoration: underline;
-        }
-        .nav_bt1 img:first-child {
-            padding-right: 8px;
-        }
-        .nav_bt1 div:last-child {
-            width: 8px;
-            height: 11px;
-            margin-left: 20px;
-            background: url("img/icon_myset.png");
-            background-position: -109px -65px;
-            background-repeat: no-repeat;
-        }
-        .login_section {
-            position: relative;
-            width: 1280px;
-            margin: 0 auto;
-        }
-        .login_container {
-            position: absolute;
-            width: 324px;
-            background-color: white;
-            box-shadow: 0 3px 10px -4px #000;
-            color: #333;
-            right: 0;
-            bottom: 55px;
-        }
-        .login_container > p{
-            font-size: 18px;
-            line-height: 28px;
-            text-align: left;
-            padding: 0 19px;
-            margin: 16px 0 10px;
-            box-sizing: border-box;
-        }
-        .login_button {
-            height: 42px;
-            padding: 8px 30px 8px 30px;
-            border-radius: 25px;
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-            background-color: #1089d2;
-            box-sizing: border-box;
-            text-align: center;
-            margin: 0 20px;
-            cursor: pointer;
-        }
-        .login_button:hover {
-            text-decoration: underline;
-        }
-        .login_container ul{
-            position: relative;
-            display:flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 17px;
-            margin-bottom: 17px;
-            padding: 0 19px;
-            font-size: 14px;
-        }
-        .login_container li{
-            position: relative;
-            display: flex;
-            float: left;
-            align-items: center;
-        }
-        .login_container li:hover {
-            text-decoration: underline;
-        }
-        .login_container li:first-child::after {
-            content: '';
-            display: block;
-            position: absolute;
-            top: 50%;
-            margin-top: -6px;
-            left: 98px;
-            width: 1px;
-            height: 12px;
-            background-color: #e0e0e0;
-        }
-        .login_icon {
-            width: 14px;
-            height: 14px;
-            padding-right: 5px;
-        }
-        .bannerControl_container {
-            position: absolute;
-            display: flex;
-            top: -75px;
-            left: 34%;
-            background-color: rgba(0,0,0,0.5);
-            color: white;
-            width: 130px;
-            height: 30px;
-            border-radius: 15px;
-            font-size: 16px;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 15px;
-            box-sizing: border-box;
-            z-index: 1001;
-        }
-        .bannerpage {
-            letter-spacing: 2px;
-        }
-        .left_bannerbutton {
-            width: 7px;
-            height: 12px;
-            padding: 4px 6.5px;
-            background: url("img/banner_slide.png");
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-            cursor: pointer;
-        }
-        .right_bannerbutton {
-            width: 7px;
-            height: 12px;
-            padding: 4px 6.5px;
-            background: url("img/banner_slide2.png");
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-            cursor: pointer;
-        }
-        .pause_bannerbutton {
-            width: 8px;
-            height: 10px;
-            padding: 5px 6px;
-            background: url("img/banner_pause.png");
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-            cursor: pointer;
-        }
-        .search_section {
-            position: relative;
-            padding-left: 53px;
-            display: flex;
-            width: 1280px;
-            height: 108px;
-            color: #333333;
-            background-color: #f7faff;
-            margin: 0 auto;
-            margin-top: -30px;
-            box-shadow: 0 -10px 30px -20px #000;
-            border: 1px solid #d5dbe5;
-            justify-self: center;
-            align-items: center;
-            box-sizing: border-box;
-        }
-        .search_container {
-            position: relative;
-            width: 62%;
-            box-sizing: border-box;
-        }
-        .searchbar {
-            width: 100%;
-            height: 60px;
-            float: left;
-            padding: 0 66px 0 30px;
-            border: 3px solid #3352a4;
-            border-radius: 30px;
-            color: #555555;
-            font-size: 20px;
-            vertical-align: middle;
-            box-sizing: border-box;
-            outline: none;
-        }
-        .searchButton {
-            position: absolute;
-            overflow: hidden;
-            top: 50%;
-            right: 15px;
-            width: 44px;
-            height: 44px;
-            border: 0;
-            border-radius: 100%;
-            background: #3352a4 url("img/search_icon.png") 50% 50% no-repeat;
-            transform: translateY(-50%);
-        }
-    </style>
+    <link rel="stylesheet" href="css/main.css">
+    <title>정부24 : 클론코딩</title>
 </head>
 <body>
+    <!--헤더-->
     <header>
         <div class="sub_nav">
             <div class="sub_nav_inner">
@@ -434,7 +67,96 @@
     <section>
         <div class="search_section">
             <div class="search_container"><input type="text" value="검색어를 입력해주세요." class="searchbar"><div class="searchButton"></div></div>
+            <p>추천검색어</p>
+            <div class="searchRanking_container"><div class="searchRanking"><b style="color:#1089d2; padding-right: 8px;">1</b>가족관계증명서</div></div>
         </div>
     </section>
+    <!--자주 찾는 서비스 & 공지사항 섹션-->
+    <section class="section1">
+        <div class="services_container">
+            <p><b>자주 찾는 서비스</b></p>
+        </div>
+        <div class="notice_container" >
+            <p><b>공지사항</b></p>
+        </div>
+    </section>
+    <!--원스톱 서비스 & 보조금24 섹션-->
+    <section class="section2">
+        <div class="onestop_container">
+            <p><b>원스톱 서비스</b></p>
+        </div>
+        <div class="bojo_container" >
+            <p><b>보조금24</b></p>
+        </div>
+    </section>
+    <!--뉴스 섹션-->
+    <section class="section3">
+        <div class="news1_container">
+            <p><b>정책뉴스</b></p>
+        </div>
+        <div class="news2_container" >
+            <p><b>이 달의 영상뉴스</b></p>
+        </div>
+        <div class="news3_container" >
+            <img src="img/news_img.jpg">
+        </div>
+    </section>
+    <!--국민소통채널-->
+    <section class="channel_section">
+        <div class="channel_container">
+            <p>국민소통채널</p>
+            <div class="channel_inner">
+                <div class="channel_left"></div>
+                <ul>
+                    <li><a href="#"><img src="img/channel1.png"></a></li>
+                    <li><a href="#"><img src="img/channel2.jpg"></a></li>
+                    <li><a href="#"><img src="img/channel3.jpg"></a></li>
+                    <li><a href="#"><img src="img/channel4.png"></a></li>
+                    <li><a href="#"><img src="img/channel5.jpg"></a></li>
+                </ul>
+                <div class="channel_right"></div>
+            </div>
+        </div>
+    </section>
+    <!--푸터-->
+    <footer>
+        <div class="topfooter">
+            <div class="topfooter_inner">
+            <div class="topfooter_left">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#"><b>개인정보처리방침</b></a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">개선의견수렴</a></li>
+                    <li><a href="#">open API</a></li>
+                </ul>
+            </div>
+            <div class="topfooter_right">
+                <ul>
+                    <a href="#"><li class="sns footer-b"></li></a>
+                    <a href="#"><li class="sns footer-t"></li></a>
+                    <a href="#"><li class="sns footer-f"></li></a>
+                    <a href="#"><li class="sns footer-k"></li></a>
+                    <a href="#"><li class="sns footer-y"></li></a>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="bottomfooter">
+            <div class="bottomfooter_inner">
+                <img class="footer_logo" src="img/logo2.png">
+                <p>
+            정부24 콜센터 <b>1588-2188</b>, 02-3703-2500 (09:00 ~ 18:00 평일)<br>
+<b>※ 콜센터 내선 번호 안내</b><br>
+<b>[1번]</b> 주민등록등초본, 건축물대장, 토지대장 관련 <b>[2번]</b> 민원 신청 및 결과 관련 <b>[3번]</b> 신청 완료 민원 출력 관련<br>
+<b>[4번]</b> 회원 가입, 로그인 관련 <b>[5번]</b> 보조금24, 정부24 이용 관련<br>
+<br>
+정부민원안내콜센터 국번없이 110 (365일 24시간)<br>
+Copyright © Ministry of the Interior and Safety. All Rights Reserved.
+                </p>
+                <img class="footer_logo2" src="img/logo3.png">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
