@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="main.css">
     <title>정부24 : 클론코딩</title>
 </head>
 <body>
@@ -74,30 +74,31 @@
     <!--자주 찾는 서비스 & 공지사항 섹션-->
     <section class="section1">
         <div class="services_container">
-            <p><b>자주 찾는 서비스</b></p>
+            <div class="services_wrap"><span><b>자주 찾는 서비스</b></span><div class="pagePlusbutton"></div><p class="pageNum"><b>1</b>/3</p></div>
+            
             <div class="services_inner">
                 <div class="services_left"></div>
                 <div class="services_center">
                     <ul>
-                        <li><div class="service_item_container"><div class="service_item no1"></div></div></li>
-                        <li><div class="service_item_container"><div class="service_item no2"></div></div></li>
-                        <li><div class="service_item_container"><div class="service_item no3"></div></div></li>
-                        <li><div class="service_item_container"><div class="service_item no4"></div></div></li>
-                        <li><div class="service_item_container"><div class="service_item no5"></div></div></li>
-                        <li><div class="service_item_container"><div class="service_item no6"></div></div></li>
-                        <li><div class="service_item_container"><div class="service_item no7"></div></div></li>
-                        <li><div class="service_item_container"><div class="service_item no8"></div></div></li>
-                        <li><div class="service_item_container"><div class="service_item no9"></div></div></li>
-                        <li><div class="service_item_container"><div class="service_item no10"></div></div></li>
-                        <li><div class="service_item_container"><div class="service_item no11"></div></div></li>
-                        <li><div class="service_item_container"><div class="service_item no12"></div></div></li>
+                        <li><div class="service_item_container"><div class="service_tag"></div><div class="service_item no1"><a href="#"><p>주민등록등본(초본)</p></a></div></div></li>
+                        <li><div class="service_item_container"><div class="service_tag"></div><div class="service_item no2"><a href="#"><p>건축물대장</p></a></div></div></li>
+                        <li><div class="service_item_container"><div class="service_tag"></div><div class="service_item no3"><a href="#"><p>토지(임야)<br>대장</p></a></div></div></li>
+                        <li><div class="service_item_container"><div class="service_tag2"></div><div class="service_item no4"><a href="#"><p>가족관계<br>증명서</p></a></div></div></li>
+                        <li><div class="service_item_container"><div class="service_tag"></div><div class="service_item no5"><a href="#"><p>격리통지서</p></a></div></div></li>
+                        <li><div class="service_item_container"><div class="service_tag"></div><div class="service_item no6"><a href="#"><p>격리 해제<br>사실 확인서</p></a></div></div></li>
+                        <li><div class="service_item_container"><div class="service_tag"></div><div class="service_item no7"><a href="#"><p>코로나19<br>예방접종 증명</p></a></div></div></li>
+                        <li><div class="service_item_container"><div class="service_tag"></div><div class="service_item no8"><a href="#"><p>지적도<br>(임야도)</p></a></div></div></li>
+                        <li><div class="service_item_container"><div class="service_tag"></div><div class="service_item no9"><a href="#"><p>토지이용<br>계획확인</p></a></div></div></li>
+                        <li><div class="service_item_container"><div class="service_tag"></div><div class="service_item no10"><a href="#"><p>지방세<br>납세증명</p></a></div></div></li>
+                        <li><div class="service_item_container"><div class="service_tag"></div><div class="service_item no11"><a href="#"><p>지방세 세목별<br>과세증명</p></a></div></div></li>
+                        <li><div class="service_item_container"><div class="service_tag"></div><div class="service_item no12"><a href="#"><p>납세증명</p></a></div></div></li>
                     </ul>
                 </div>
                 <div class="services_right"></div>
             </div>
         </div>
-        <div class="notice_container" >
-            <p><b>공지사항</b></p>
+        <div class="notice_container">
+            <div class="notice_wrap"><span><b>공지사항</b></span><div class="pagePlusbutton"></div></div>
         </div>
     </section>
     <!--원스톱 서비스 & 보조금24 섹션-->
@@ -121,7 +122,7 @@
             <img src="img/news_img.jpg">
         </div>
     </section>
-    <!--국민소통채널-->
+    <!--국민소통채널 섹션-->
     <section class="channel_section">
         <div class="channel_container">
             <p>국민소통채널</p>
