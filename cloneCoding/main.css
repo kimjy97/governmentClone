@@ -5,6 +5,7 @@
 }
 body {
     background-color: #f9fafc;
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -17,6 +18,14 @@ ul {
 header {
    display:flex;
    flex-direction: column;
+}
+.topHeader {
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+    background-color: rgb(155, 0, 0);
+    color: yellow;
+    font-size: 14px;
 }
 .sub_nav {
     display: flex;
@@ -204,7 +213,8 @@ header {
 }
 .login_section {
     position: relative;
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
 }
 .login_container {
@@ -226,7 +236,7 @@ header {
 }
 .login_button {
     height: 42px;
-    padding: 8px 30px 8px 30px;
+    line-height: 42px;
     border-radius: 25px;
     color: white;
     font-size: 18px;
@@ -326,7 +336,8 @@ header {
     position: relative;
     padding-left: 53px;
     display: flex;
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     height: 108px;
     color: #333333;
     background-color: #f7faff;
@@ -408,7 +419,8 @@ header {
 .section1 {
     position: relative;
     display: flex;
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
     margin-top: 40px;
     justify-content: space-between;
@@ -440,6 +452,7 @@ header {
     border-radius: 5px;
     background: url('img/plus.png') 50% 50% no-repeat;
     background-size: auto;
+    box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.05);
     cursor: pointer;
     float: left;
 }
@@ -759,10 +772,49 @@ header {
     font-weight: bold;
     color: #131516;
 }
+.onestop_wrap {
+    width: 100%;
+    display: inline-block;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.onestop_wrap span {
+    color: #33363E;
+    padding-right: 15px;
+    float: left;
+    font-size: 22px;
+}
+.onestop_wrap p {
+    color: #33363E;
+    float: right;
+    font-size: 13px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+.onestop_wrap p:hover {
+    text-decoration: underline;
+}
+.onestop_wrap div > p:first-child {
+    margin-left: 15px;
+}
+.onestop_wrap div:last-child {
+    padding: 5px 0;
+    float: right;
+}
+.onestop_wrap p::after {
+    content: '';
+    position: absolute;
+    background: url('img/linkbutton.png') 50% 50% no-repeat;
+    width: 7px;
+    height: 7px;
+    margin-top: 4px;
+    margin-left: 7px;
+}
 .section2 {
     position: relative;
     display: flex;
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
     margin-top: 40px;
     justify-content: space-between;
@@ -778,6 +830,95 @@ header {
     border-radius: 25px;
     box-sizing: border-box;
 }
+.onestop_inner {
+    display: flex;
+    width: 100%;
+    padding-bottom: 73px;
+    box-sizing: border-box;
+}
+.onestop_left {
+    width: 22.4px;
+    height: 22.4px;
+    margin-top: 10px;
+    padding: 50px 0;
+    left: 25px;
+    background: url('img/services_left.png') 50% 50% no-repeat;
+    background-size: 18px 31px;
+    transform: scale(0.7);
+    cursor: pointer;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.onestop_right {
+    width: 22.4px;
+    height: 22.4px;
+    margin-top: 10px;
+    padding: 50px 0;
+    background: url('img/services_right.png') 50% 50% no-repeat;
+    background-size: 18px 31px;
+    transform: scale(0.7);
+    cursor: pointer;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.onestop_center {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.onestop_center ul {
+    margin-top: 15px;
+}
+.onestop_center li{
+    float:left;
+    color: #333333;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 15px;
+}
+.onestop_center li p{
+    margin-top: 91px;
+}
+.onestop_item {
+    width: 82px;
+    height: 82px;
+    background-color: white;
+    border: 1px solid #dee2e3;
+    border-radius: 100%;
+    margin-bottom: 8px;
+}
+.onestop_item:hover {
+    border-color: #3352a4;
+    text-decoration: underline;
+}
+.onestop_no1 {
+    background: url('img/onestop_1.png') no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.onestop_no2 {
+    background: url('img/onestop_2.png') no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.onestop_no3 {
+    background: url('img/onestop_3.png') no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.onestop_no4 {
+    background: url('img/onestop_4.png') no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.onestop_no5 {
+    background: url('img/onestop_5.png') no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
 .bojo_container {
     width: calc(46% - 20px);
     height: 225px;
@@ -787,10 +928,51 @@ header {
     border-radius: 25px;
     box-sizing: border-box;
 }
+.bojo_wrap {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.bojo_wrap {
+    width: 100%;
+    display: inline-block;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.bojo_wrap span {
+    color: #33363E;
+    padding-right: 15px;
+    float: left;
+    font-size: 22px;
+}
+.bojo_inner {
+    margin-top: 20px;
+    padding: 0 20px;
+    font-size: 18px;
+}
+.bojo_inner span{
+    color: #0662dd;
+}
+.bojo_inner p::after{
+    content: '';
+    position: absolute;
+    background: url('img/bojo_icon.png') 50% 50% no-repeat;
+    width: 169px;
+    height: 96px;
+    margin-left: 80px;
+    margin-top: -80px;
+}
+.bojo_inner p{
+    color: #6d7179;
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 1.4;
+}
 .section3 {
     position: relative;
     display: flex;
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
     margin-top: 40px;
     justify-content: space-between;
@@ -933,6 +1115,11 @@ header {
 }
 .topfooter_left li:hover {
     text-decoration: underline;
+}
+.topfooter_left b{
+    color: #003764;
+    text-decoration: underline;
+    font-size: 17px;
 }
 .topfooter_right li {
     float: left;
