@@ -23,7 +23,7 @@ header {
     height: 33px;
     text-align: center;
     line-height: 33px;
-    background-color: rgb(155, 0, 0);
+    background-color: rgb(175, 0, 0);
     color: yellow;
     font-size: 14px;
 }
@@ -988,6 +988,68 @@ header {
     border-radius: 25px;
     box-sizing: border-box;
 }
+.news1_wrap {
+    display: block;
+    height: 30px;
+    margin: 1px 20px;
+    font-size: 18px;
+    color: #767676;
+}
+.news1_wrap ul{
+    height: 100%;
+}
+.news1_wrap li{
+    float: left;
+    margin-right: 30px; 
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+.news1_wrap li:hover{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.news1_wrap li:first-child:hover{
+    text-decoration: none;
+}
+.news1_wrap li:last-child{
+    float: right;
+    margin-right: 0;
+}
+.news1_wrap li:first-child{
+    color: #33363e;
+    border-bottom: 2px solid #000000;
+}
+.news1_inner {
+    padding: 0 20px;
+    margin-top: 20px;
+}
+.news1_inner li strong{
+    font-weight: bold;
+    color: #6d7179;
+    font-size: 14px;
+}
+.news1_inner li p{
+    color: #666666;
+    font-size: 12px;
+    float: right;
+    margin-top: 5px;
+}
+.news1_inner li p:last-child{
+    display: block;
+    color: #6d7179;
+    margin-top: 7px;
+    font-size: 12px;
+    float:inherit;
+}
+.news1_inner li {
+    padding-bottom: 22px;
+}
+.news1_inner a {
+    cursor: pointer;
+}
+.news1_inner a:hover {
+    text-decoration: underline;
+}
 .news2_container {
     width: 32%;
     height: 282px;
@@ -996,6 +1058,88 @@ header {
     border: 1px solid #d5dbe5;
     border-radius: 25px;
     box-sizing: border-box;
+}
+.news2_wrap {
+    display: block;
+    height: 30px;
+    margin: 1px 20px;
+    font-size: 18px;
+    color: #767676;
+}
+.news2_wrap ul{
+    height: 100%;
+}
+.news2_wrap li{
+    float: left;
+    margin-right: 30px; 
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+.news2_wrap li:hover{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.news2_wrap li:first-child:hover{
+    text-decoration: none;
+}
+.news2_wrap li:first-child{
+    color: #33363e;
+    border-bottom: 2px solid #000000;
+}
+.news2_inner {
+    display: flex;
+    width: 100%;
+    padding-bottom: 73px;
+    box-sizing: border-box;
+}
+.news2_left {
+    width: 22.4px;
+    height: 22.4px;
+    margin-top: 35px;
+    padding: 50px 0;
+    left: 25px;
+    background: url('img/services_left.png') 50% 50% no-repeat;
+    background-size: 18px 31px;
+    transform: scale(0.7);
+    cursor: pointer;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.news2_right {
+    width: 22.4px;
+    height: 22.4px;
+    margin-top: 35px;
+    padding: 50px 0;
+    background: url('img/services_right.png') 50% 50% no-repeat;
+    background-size: 18px 31px;
+    transform: scale(0.7);
+    cursor: pointer;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.news2_center {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+.news2_img {
+    background: url('img/news2_img.png') 50% 50% no-repeat;
+    border: 1px solid #dddddd;
+    width: 236px;
+    height: 124px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.news2_center p{
+    font-size: 14px;
+    color: #33363E;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 0 35px;
+}
+.news2_center a:hover{
+    text-decoration: underline;
 }
 .news3_container {
     width: calc(24% - 40px);
@@ -1007,6 +1151,55 @@ header {
     box-sizing: border-box;
     background: url("img/news_img.jpg") no-repeat;
     background-size: 100%;
+    cursor: pointer;
+}
+.news3Control_container {
+    position: relative;
+    display: flex;
+    top: -50px;
+    left: 65px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    width: 140px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 16px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+    z-index: 1005;
+}
+.news3_page {
+    letter-spacing: 2px;
+    margin-right: 7px;
+}
+.left_news3button {
+    width: 7px;
+    height: 12px;
+    padding: 4px 6.5px;
+    background: url("img/banner_slide.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    cursor: pointer;
+}
+.right_news3button {
+    width: 7px;
+    height: 12px;
+    padding: 4px 6.5px;
+    padding-left: 0px;
+    background: url("img/banner_slide2.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    cursor: pointer;
+}
+.pause_news3button {
+    width: 8px;
+    height: 10px;
+    padding: 5px 6px;
+    background: url("img/banner_pause.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     cursor: pointer;
 }
 .channel_section {
